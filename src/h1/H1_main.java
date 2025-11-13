@@ -1,13 +1,14 @@
 package h1;
 
-public class H2_main {
+public class H1_main {
 	public static void main(String[] args) {
-		int zone = 3;
+		int zone = 6;
 		double price = 0.0;
 		
 		switch (zone) {
 		case 0:
-			System.out.print("Preis = unbekannt");
+			price = 0.00;
+			break;
 		case 1:
 			price = 2.00;
 			break;
@@ -26,10 +27,11 @@ public class H2_main {
 			break;
 		}
 		
-		System.out.print("Zone(n): " + zone);
-		System.out.print("Preis: " + price);
+		System.out.print("Zone: " + zone);
 		
+		System.out.print("Preis: " + price + " Euro");
 		
+
 	}
 
 }
